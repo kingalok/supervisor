@@ -2,7 +2,8 @@
     "graphs": {
         "jiraagent": "./jira_agent.py:graph",
         "webagent": "./web_agent.py:graph",
-        "supervisor": "./supervisor.py:graph"
+        "supervisor": "./supervisor.py:graph",
+        "teleagent": "./telegram_agent.py:graph"    
     },
     "dependencies": ["."]
 }
