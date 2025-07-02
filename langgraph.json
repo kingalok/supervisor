@@ -1,0 +1,8 @@
+{
+    "graphs": {
+        "jiraagent": "./jira_agent.py:graph",
+        "webagent": "./web_agent.py:graph",
+        "supervisor": "./supervisor.py:graph"
+    },
+    "dependencies": ["."]
+}
