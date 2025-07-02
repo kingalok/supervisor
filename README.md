@@ -5,6 +5,7 @@ This project demonstrates a multi-agent orchestration using [LangGraph](https://
 - **Supervisor Agent:** Orchestrates and manages tasks between sub-agents.
 - **Jira Agent:** Handles Jira operations (create, update, comment, delete, search, list).
 - **Web Agent:** Provides current weather information for any location.
+- **Telegram Agent:** Sends and receives messages via Telegram.
 
 ---
 
@@ -88,6 +89,7 @@ The `supervisor.py` script initializes the supervisor agent, which delegates tas
 
 - **Jira Agent:** For Jira-related actions.
 - **Web Agent:** For weather queries.
+- **telegram_agent.py:**  Defines the Telegram tool and creates the Telegram agent.
 
 ### 3. Example Agent Usage
 
