@@ -27,7 +27,8 @@ load_dotenv()
 # Creating a supervisor agent
 from langgraph_supervisor import create_supervisor
 
-model_id="gemini-2.5-flash-preview-05-20"
+#model_id="gemini-2.5-flash-preview-05-20"
+model_id="gemini-2.5-flash"
 llm = init_chat_model(model=model_id,  model_provider="google_vertexai")
 
 
@@ -48,10 +49,10 @@ Supervisor Agent Prompt
  Your job is to analyze each incoming task or request and delegate it to the most appropriate agent.
  - If the task involves Jira operations, assign it to jiraagent.
  - If the task is about weather information, assign it to webagent.
- - If the task involves Telegram messaging or chat, assign it to telegramagent.
+ - If the task involves Telegram messaging or chat, assign it to teleagent.
     
 
-    If a user asks to get information (such as weather) and send it via Telegram, you must:
+    If a user asks to get information (such as weather, or list issues in a project) and send it via Telegram, you must:
     - First, use the appropriate agent to get the information.
     - Then, pass the result to the Telegram agent to send as a message.
     Do not ask the user to manually transfer information between agents.
